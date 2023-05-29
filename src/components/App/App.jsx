@@ -20,8 +20,8 @@ const App = () => {
             <Route path="cast" element={<MovieCredits />} />
             <Route path="reviews" element={<MovieReviews />} />
           </Route>
+          
           <Route path="*" element={<NotFound />} />
-
         </Route>
       </Routes>    
   );

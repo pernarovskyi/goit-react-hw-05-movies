@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Credits = ({ credits }) => {
   return (
     <ul>
@@ -35,6 +37,10 @@ const Credits = ({ credits }) => {
         : "Sorry, there's no info about this movie"}
     </ul>
   );
+};
+
+Credits.propTypes = {  
+  credits: PropTypes.array.isRequired,
 };
 
 export default Credits;

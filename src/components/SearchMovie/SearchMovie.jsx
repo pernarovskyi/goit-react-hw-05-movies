@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import {
   InputArea,
   SearchButton,
@@ -42,5 +43,10 @@ const SearchMovie = ({ onSubmit, movies }) => {
     </SearchSectionWrapper>
   );
 };
+
+SearchMovie.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+  movies: PropTypes.array.isRequired,
+}
 
 export default SearchMovie;

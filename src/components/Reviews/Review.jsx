@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Review = ({ movieReviews }) => {
   return (
     <ul>
@@ -18,5 +20,9 @@ const Review = ({ movieReviews }) => {
     </ul>
   );
 };
+
+Review.propTypes = {  
+  movieReviews: PropTypes.array.isRequired,
+}
 
 export default Review;

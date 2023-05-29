@@ -44,7 +44,7 @@ const MovieDetails = () => {
         <>
           <BackLink to={backLinkHref}>Back</BackLink>
           <Details movieDetails={movieDetails} />
-          <p>Additional information</p>
+          <h4 style={{marginTop: '20px'}}>Additional information</h4>
           <ul>
             <li>
               <Link to="cast" state={{...location.state}}>Cast</Link>
