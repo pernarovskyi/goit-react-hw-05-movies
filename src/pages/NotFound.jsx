@@ -1,5 +1,5 @@
 
-const NotFound =() => {
+const NotFound = () => {
     return (
         <>
             Not Found 404

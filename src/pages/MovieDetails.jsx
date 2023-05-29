@@ -38,7 +38,7 @@ const MovieDetails = () => {
     }
   }, [moviId]);
   return (
-    <main>
+    <>
       {loading && <Loader />}
       {!loading && (
         <>
@@ -56,7 +56,7 @@ const MovieDetails = () => {
           <Outlet />
         </>
       )}
-    </main>
+    </>
   );
 };
 

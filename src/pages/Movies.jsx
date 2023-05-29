@@ -49,7 +49,7 @@ const Movies = () => {
   };
 
   return (
-    <main>
+    <>
       {loading && <Loader />}
       {!loading && (
         <SearchMovie onSubmit={handleSubmit} movies={moviesBySearch} />
@@ -59,7 +59,7 @@ const Movies = () => {
           No matches found on your request. Try again.
         </p>
       }
-    </main>
+    </>
   );
 };
 
